@@ -1,0 +1,1 @@
+define(function() { return [{"appname":"", "appid":"Untitled", "path":"fangraphs%20tool.html"},{"appname":"", "appid":"fangraphsslg", "path":"fangraphsslg.html"},{"appname":"", "appid":"add_players", "path":"add_players.html"},{"appname":"", "appid":"examples", "path":"examples.html"}]});

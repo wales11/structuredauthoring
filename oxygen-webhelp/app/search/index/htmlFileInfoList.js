@@ -1,0 +1,3 @@
+define(function () {
+return ["add_players.html@@@Add players to compare@@@Fangraphs allows you to add as many players as you want, as long as the players are in the Fangraphs database...","examples.html@@@Example@@@I am giving a detailed example that showcases an average use of the Fangraphs compare tool...","fangraphs tool.html@@@How to use the Fangraphs compare tool@@@The Fangraphs compare tool is useful for comparing players over time. The hardest part of using the Fangraphs compare tool will be choosing which players to compare. With that in mind, let&apos;s get...","fangraphsslg.html@@@SLG@@@Slugging percentage, also known as SLG, is a baseball statistic used to evaluate hitting..."];
+});

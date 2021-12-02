@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,italic,bold&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,italic,bold&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+/*#
+@colors&{"titlesAccentColor":"#574242","labelsAccentColor":"#6e6666","linksAccentColor":"#2372fc","backgroundAccentColor":"#dcddf2","isDefault":true}&colors@
+@info@STYLES BASKET SELECTIONS METADATA@info@
+@name&styles_basket&name@
+@aspects&wh-tiles,accent-colors-selector,theme-fonts-lato-open-sans,title-font-size-medium,content-font-size-10-and-half,between-elements-small,between-lines-medium,footnotes-style-square-brackets,footnotes-links-accent-colors,footnotes-separator-solid,code-font-ibm-plex-mono,code-colors-theme-github,table-style-rounded-corner,unordered-list-bullet-square,unordered-list-bullet-color-labels,unordered-list-bullet-size-small,ordered-list-counter-upper,ordered-list-counter-color-titles,hazard-content-border,hazard-colors-light,notes-style-borders-box,notes-colors-titles-background,links-style-underline-on-hover,related-links-styles-background,related-links-colors-titles,tasks-labels-yes,tasks-style-bullets,tasks-layout-sidebar-background,pdf-cover-title-size-small,toc-numbering-deep-chapter,header-colors-titles,left-pages-footer-centered-page,right-pages-footer-centered-page,footer-colors-titles,pdf-index-groups-colors-titles-colors,pdf-index-groups-styles-bold-underline,pdf-index-groups-alignment-inline,wh-tiles-themes-titles-and-link,wh-breadcrumb-style-bold-selection,wh-left-toc-thin-right-full-border,wh-right-toc-style-bar-selection,wh-right-toc-thin-left-full-border,wh-index-terms-background-transparent,wh-search-component-colors-links,wh-search-component-padding-small&aspects@
+@info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICIATION CAN CAUSE UPLOADING ERRORS@info@
+#*/
+/* Bold selection in Publication TOC. WebHelp only. */
+@media screen {
+  .wh_publication_toc .active > .topicref a {
+    font-weight: bold;
+  }
+}
+/*accent-colors-selector*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  color: #574242;
+}
+*[class~='topic/shortdesc']:before {
+  color: #6e6666;
+}
+*[class~='topic/xref'],
+*[class~='topic/link'] {
+  color: #2372fc;
+}
+.related-links a,
+.related-links a:visited {
+  color: #2372fc;
+}
+a,
+a:hover,
+a:visited {
+  color: #2372fc;
+}
+*[class~='topic/table'] th {
+  background-color: #dcddf2;
+}
+/*theme-fonts-lato-open-sans*/
+@page {
+  font-family: 'Lato', sans-serif;
+}
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~="map/topicref"],
+*[class~='topic/title'],
+*[class~='topic/thead'],
+*[class~="placeholder/figurelist"],
+*[class~="placeholder/tablelist"],
+*[class~="index/groups"]::before,
+*[class~="index/group"] > *[class~="index/label"],
+.wh_publication_title,
+.wh_top_menu,
+.wh_tile_title .topicref,
+.wh_main_page_toc_entry .topicref,
+.wh_index_terms span.wh_first_letter,
+.wh-letters li a {
+  font-family: 'Lato', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/*title-font-size-medium*/
+.topictitle1,
+*[class~='toc/title'],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  font-size: 21pt;
+}
+.topictitle2 {
+  font-size: 18pt;
+}
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6 {
+  font-size: 15pt;
+}
+/*content-font-size-10-and-half*/
+body {
+  font-size: 10.5pt;
+}
+/*between-elements-small*/
+*[class~='topic/p'],
+*[class~='topic/lq'],
+*[class~='topic/note'],
+*[class~='topic/dl'],
+*[class~='topic/ul'],
+*[class~='topic/ol'],
+*[class~='topic/li'],
+*[class~='topic/sl'],
+*[class~='topic/pre'],
+*[class~='topic/lines'],
+*[class~='topic/fig'],
+*[class~='topic/table'],
+*[class~='topic/simpletable'],
+*[class~='topic/section'],
+*[class~='topic/example'] {
+  margin: 0.8em 0;
+}
+/*between-lines-medium*/
+*[class~='topic/topic'],
+*[class~='topic/body'],
+*[class~='topic/title'] {
+  line-height: 1.4;
+}
+/*footnotes-style-square-brackets*/
+@media print {
+  *[class~="topic/fn"]::footnote-call,
+  *[class~="topic/fn"]::footnote-marker {
+    content: "[" counter(footnote) "]";
+  }
+}
+*[class~="topic/fn"]::footnote-call,
+*[class~="topic/fn"]::footnote-marker,
+*[class~="topic/fn-call"] {
+  font-size: 83%;
+  line-height: none;
+}
+*[class~="topic/fn-call"] > sup::before,
+*[class~="topic/fn"] sup::before {
+  content: "[";
+}
+*[class~="topic/fn-call"] > sup::after,
+*[class~="topic/fn"] sup::after {
+  content: "]";
+}
+/*footnotes-links-accent-colors*/
+*[class~="topic/fn"]::footnote-call,
+*[class~="topic/fn"]::footnote-marker,
+*[class~="topic/fn-call"] {
+  color: #2372fc;
+}
+*[class~="topic/fn-call"] > sup,
+*[class~="topic/fn"] sup {
+  color: #2372fc;
+}
+/*footnotes-separator-solid*/
+@media print {
+  @page {
+    @footnote {
+      content: leader(solid);
+    }
+  }
+}
+@media screen {
+  *[class~="topic/body"] + *[class~="topic/fn"] {
+    border-top: 1px solid black;
+  }
+}
+/*code-font-ibm-plex-mono*/
+*[class~='pr-d/codeblock'],
+*[class~='codeblock'],
+*[class~='pr-d/codeph'],
+*[class~='codeph'] {
+  font-family: 'IBM Plex Mono', monospace;
+}
+/*code-colors-theme-github*/
+*[class~='codeblock'] {
+  color: #111111;
+  background-color: #FFFFFF;
+}
+*[class~='hl-keyword'] {
+  color: #000000;
+}
+*[class~='hl-string'] {
+  color: #D25252;
+}
+*[class~='hl-tag-doctype-comment'],
+*[class~='hl-comment'] {
+  color: #777777;
+}
+*[class~='hl-number'] {
+  color: #33AAAA;
+}
+/*table-style-rounded-corner*/
+@media screen {
+  *[class~="topic/table"],
+  *[class~="topic/simpletable"] {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  /* Need to define radius on th for Google Chrome. */
+  *[class~="topic/thead"] th:first-child,
+  *[class~="topic/simpletable"] th:first-child {
+    border-top-left-radius: 12px;
+  }
+  *[class~="topic/thead"] th:last-child,
+  *[class~="topic/simpletable"] th:last-child {
+    border-top-right-radius: 12px;
+  }
+  *[class~='topic/table'],
+  *[class~="topic/thead"],
+  *[class~='topic/simpletable'],
+  *[class~='topic/entry'],
+  *[class~='topic/stentry'] {
+    border: 0 !important;
+  }
+}
+/*unordered-list-bullet-square*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"] {
+  list-style-type: square;
+}
+/*unordered-list-bullet-color-labels*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  color: #6e6666;
+}
+/*unordered-list-bullet-size-small*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  font-size: 0.9em;
+}
+/*ordered-list-counter-upper*/
+*[class="- topic/ol ol"] > *[class="- topic/li li"] {
+  list-style-type: upper-roman;
+}
+*[class="- topic/ol ol"] *[class="- topic/ol ol"] > *[class="- topic/li li"] {
+  list-style-type: upper-alpha;
+}
+*[class="- topic/ol ol"] *[class="- topic/ol ol"] *[class="- topic/ol ol"] > *[class="- topic/li li"] {
+  list-style-type: decimal;
+}
+/*ordered-list-counter-color-titles*/
+*[class="- topic/ol ol"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ol ol"] > *[class="- topic/li li"]::before {
+  color: #574242;
+}
+/*hazard-content-border*/
+*[class~="hazard-d/hazardstatement"] th,
+*[class~="hazard-d/hazardstatement"] td {
+  border: 0;
+}
+/*hazard-colors-light*/
+*[class~="hazard-d/hazardstatement"],
+*[class~="hazard-d/hazardstatement"] th,
+*[class~="hazard-d/hazardstatement"] td {
+  border-color: #707070;
+}
+*[class~="hazard-d/hazardstatement"].hazardstatement_danger th {
+  background-color: #ff3636;
+}
+*[class~="hazard-d/hazardstatement"].hazardstatement_warning th {
+  background-color: #ffae5a;
+}
+*[class~="hazard-d/hazardstatement"].hazardstatement_caution th {
+  background-color: #ffdf4d;
+}
+*[class~="hazard-d/hazardstatement"] th {
+  background-color: #1c99ff;
+}
+/*notes-style-borders-box*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  border: 1px solid;
+  border-radius: 11px;
+}
+/*notes-colors-titles-background*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  color: #574242;
+  background-color: #dcddf2;
+}
+/*links-style-underline-on-hover*/
+*[class~='topic/xref'],
+*[class~='topic/link'] {
+  text-decoration: none;
+}
+*[class~='topic/xref']:hover,
+*[class~='topic/link']:hover {
+  text-decoration: underline;
+}
+.related-links a,
+.related-links a:visited,
+a,
+a:visited {
+  text-decoration: none;
+}
+.related-links a:hover,
+a:hover {
+  text-decoration: underline;
+}
+/*related-links-styles-background*/
+*[class~="topic/linklist"] > strong {
+  background-color: #dcddf2;
+  padding-left: 0.5em;
+  display: inherit;
+}
+*[class~="topic/linklist"] > .linklist {
+  padding-left: 0.5em;
+}
+/*related-links-colors-titles*/
+*[class~="topic/linklist"] > strong {
+  color: #574242;
+}
+/*tasks-labels-yes*/
+/*tasks-style-bullets*/
+ol[class~="task/steps"] {
+  counter-reset: step;
+  list-style-type: none;
+}
+ol[class~="task/steps"] > *[class~="task/step"] {
+  position: relative;
+  line-height: 1.7;
+}
+@media screen {
+  ol[class~="task/steps"] > *[class~="task/step"]:before {
+    counter-increment: step;
+    content: counter(step);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    left: -1.8em;
+    top: 0.15em;
+    background-color: black;
+    color: white;
+  }
+}
+@media print {
+  *[class~="task/step"] {
+    padding-left: 0.25em;
+  }
+  ol[class~="task/steps"] > *[class~="task/step"]::marker {
+    counter-increment: step;
+    content: counter(step);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: black;
+    color: white;
+  }
+}
+/*tasks-layout-sidebar-background*/
+ol[class~="task/steps"] {
+  border-left: 5px solid #dcddf2;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+/*pdf-cover-title-size-small*/
+*[class~="front-page/front-page-title"] > *[class~="topic/title"] {
+  font-size: 1.6em;
+}
+/*toc-numbering-deep-chapter*/
+*[class~="map/map"][numbering^='deep'] *[class~="map/topicref"][is-chapter]:not([is-part]) > *[class~="map/topicmeta"]:before {
+  content: "Chapter " counter(toc-chapter) "" ". ";
+}
+*[class~="map/map"][numbering^='deep'] *[class~="topic/topic"][is-chapter]:not([is-part]) > *[class~="topic/title"]:before {
+  content: "Chapter " counter(chapter) "" ". ";
+}
+/*header-colors-titles*/
+@page {
+  @top-left {
+    color: #574242;
+  }
+  @top-center {
+    color: #574242;
+  }
+  @top-right {
+    color: #574242;
+  }
+}
+/*left-pages-footer-centered-page*/
+@page :left {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+/*right-pages-footer-centered-page*/
+@page :right {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+/*footer-colors-titles*/
+@page {
+  @bottom-left {
+    color: #574242;
+  }
+  @bottom-center {
+    color: #574242;
+  }
+  @bottom-right {
+    color: #574242;
+  }
+}
+/*pdf-index-groups-colors-titles-colors*/
+*[class~="index/groups"]:before,
+*[class~="index/groups"] *[class~="index/group"] *[class~="index/label"],
+*[class~="index/groups"] *[class~="index/link"] {
+  color: #574242;
+}
+/*pdf-index-groups-styles-bold-underline*/
+*[class~="index/groups"]:before {
+  font-weight: bold;
+  border-bottom: 2px solid #574242;
+}
+/*pdf-index-groups-alignment-inline*/
+*[class~="index/formatted-value"],
+*[class~="index/refid"] {
+  display: inline;
+}
+/*wh-tiles*/
+/*wh-tiles-themes-titles-and-link*/
+.wh_tile {
+  background-color: transparent;
+}
+.wh_tile_title {
+  text-align: center;
+  font-size: 1.5em;
+}
+.wh_tile_title a {
+  color: #2372fc;
+}
+.wh_tile_shortdesc {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #574242;
+}
+/*wh-breadcrumb-style-bold-selection*/
+.wh_breadcrumb ol .active a {
+  font-weight: bold;
+}
+/*wh-left-toc-thin-right-full-border*/
+#wh_publication_toc {
+  border-right: thin solid #6e6666;
+}
+/*wh-right-toc-style-bar-selection*/
+.wh_topic_toc .section-item .section-title a {
+  border-left: 3px solid transparent;
+  padding-left: 5px;
+}
+.wh_topic_toc .section-item .section-title a:hover {
+  border-left: 3px solid #C0C0C0;
+}
+.wh_topic_toc .section-item .section-title .current_node {
+  border-left: 3px solid #A9A9A9;
+  text-decoration: none;
+}
+/*wh-right-toc-thin-left-full-border*/
+.wh_topic_toc {
+  border-left: none;
+}
+#wh_topic_toc {
+  border-left: thin solid #6e6666;
+}
+/*wh-index-terms-background-transparent*/
+.wh-letters {
+  background-color: transparent;
+}
+/*wh-search-component-colors-links*/
+.wh_search_button {
+  background-color: #2372fc;
+}
+/*wh-search-component-padding-small*/
+.wh_search_input {
+  padding: 30px 0;
+}
+
